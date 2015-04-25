@@ -10,7 +10,7 @@
     5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
       I split "wholedata_label" into 30 groups by subject label and create a list "list_subject". For each element in the list, I split it again by activity label and get the new list "t". For each element in t, which is a data.frame, I get the mean of its column value and return a one row data.frame. Then I combine each subject's activity to one data.frame to get toally 30 data.frame. Finally I combine these 30 data.frame to get the tidy data which is required by the question.
       
-  The set of variables I created to get the tidy data:
+#  The set of variables I created to get the tidy data:
     train/test: data.frame includes the train/test value
     test_label: the corresponding activity label of test value
     train_label: the corresponding activity label of train value
